@@ -1,0 +1,393 @@
+
+
+
+/*-----mobile styles -----*/
+
+/*all images and videos will be %100 of their parent*/
+img,video{
+    width:100%
+}
+/*-----global styles -----*/
+
+/* Apply a natural box model layout to all elements */
+*{
+    box-sizing: border-box;
+}
+
+body{
+   font-family: 'Mukta','sans-serif';
+        font-size:16px;
+    color:rgb(20, 20, 20);
+        margin:0;
+    padding:0;
+    padding-top: 70px
+
+}
+
+#homeBgImage{
+    position:relative;
+    background-image: url("../img/trainerHomePage.jpg");
+        width:100%;
+    height:100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+        background-position: center 0;
+    background-attachment: fixed;
+}
+#homeBgImage{
+            background-image:none;
+            }
+#logo{
+    width:47px;
+    position:absolute;
+    top: 5px;
+    left: 14px;
+    z-index:111;
+     position:fixed;
+}
+
+#cartIcon{
+    width:100%;
+    position:absolute;
+    top:10px;
+   text-align: center;
+    z-index:110;
+    position:fixed;
+
+}
+
+.fa-shopping-basket{
+ font-size: 2.5em;
+ color:   rgb(200, 177, 250)
+}
+
+.navC{
+    color:rgb(255,255,255) ;
+    width:100%;
+    height: auto;
+    background-color: rgb(53,38,80);
+    position:fixed;
+    z-index: 100;
+    border-bottom: 5px solid rgb(183, 154, 246);
+    top: 0px;
+}
+
+.menuItems a{
+    padding: 15px 5vw 15px 0;
+    color:rgb(255, 255, 255);
+    text-align:right
+}
+.menuItems{
+    display:none
+}
+
+
+
+nav li a,nav li{
+    list-style-type:none;
+    display:block;
+    outline-style:none;
+    width:100%;
+    height:100%;
+    text-decoration:none;
+}
+
+
+#toggle{
+    font-size: 4em;
+    color:rgb(255,255,255);
+    margin: 0px 0px 0px 83vw;
+    z-index: 112;
+}
+/*
+@font-face {
+  font-family: "28DaysLater";
+  src: url("../fonts/28DaysLater.ttf") format("opentype") ;
+}
+*/
+/*  EMBEDDED FONTS */
+@font-face{
+    font-family:'28_days';
+    src: url("../../vendors/fonts/28_days_later-webfont.ttf");
+    src: url("../../vendors/fonts/28_days_later-webfont.eot");
+    src: url("../../vendors/fonts/fonts/28_days_later-webfont.woff");
+    src: url("../../vendors/fonts/28_days_later-webfont.woff2");
+    font-weight:normal;
+    font-style:normal;
+}
+
+.fontexclusive{
+    font-family:"28_days";
+    color:rgb(255,255,255);
+    font-size: 2em;
+    top: 19vh;
+    left: 57vw;
+    position: absolute;
+
+}
+
+#buttonC, #headingC{
+    position:absolute;
+    width:100%
+}
+#buttonC {
+    top:80vh;
+}
+#headingC{
+font-family: 'Lovers Quarrel', cursive;
+    display:block;
+    color:white;
+/*    margin: 50vh auto 0 auto;*/
+    font-size: 2em;
+    letter-spacing: 2px;
+      text-align: center;
+    top: 75vh;
+    margin:0 auto;
+
+}
+#newArrivalBtn{
+
+
+    border-radius: 5px 5px ;
+    padding: 10px 15px;
+    color: rgb(255,255,255);
+    border: 1px solid  rgb(255,255,255);
+        margin:0 auto;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    background:  radial-gradient(ellipse ,purple 70%,mediumpurple 30%);
+}
+/*  STYLING FOR PRODUCTS PAGE ENDS */
+
+h1 {
+
+    font-size: 1.5em;
+    text-transform:uppercase;
+    text-align:center;
+    font-weight: lighter
+}
+h2{
+    font-size:1.3em;
+    text-align: center;
+    font-weight:lighter;
+}
+/*  STYLING FOR PRODUCTS PAGE ENDS */
+
+
+
+
+.gallery{
+text-align: center;
+
+}
+figure{
+    height : 500px;
+}
+.addToCart{
+color: rgb(255,255,255);
+background-color:rgb(53, 38, 80);
+border-radius: 5px 5px;
+padding:10px 15px;
+}
+
+.addToCart a:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight:900;
+    content:"\f07a";
+}
+
+/*
+figure{
+    display:inline;
+}
+*/
+/*  STYLING FOR Form */
+.loginForm{
+   border: 2px solid grey;
+    margin:10px 10px;
+   padding:10px 10px;
+}
+#labelInput input,#labelInput label{
+    display: block;
+    margin:auto;
+
+
+}
+.button{
+    color: rgb(255,255,255);
+    background-color:rgb(53, 38, 80);
+    border-radius: 5px 5px;
+    padding:10px 15px;
+}
+
+.allTrainers{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:100%;
+    height:auto;
+    column-count:4;
+}
+.productC ,.saleC{
+    text-align: center;
+    flex-grow: 1;
+    width: 230px;
+    margin:1px
+}
+    figcapton{
+        width:70px;
+    }
+
+
+/*  MEDIA QUERY */
+@media screen and (min-width:568px){
+.fontexclusive{
+    left: 68vw;
+}
+}
+/*  TABLETS */
+@media screen and (min-width:768px){
+.fontexclusive{
+    left: 75vw;
+    top: 10vh
+}
+#buttonC, #headingC{
+    position:absolute;
+    width:auto;
+}
+    #buttonC {
+    top:36vh;
+        left:75vw
+}
+#headingC{
+    top: 25vh;
+    left:75vw
+}
+#homeBgImage{
+    height:50vh;
+}
+
+}
+/*  DESKTOP */
+@media screen and (min-width:1024px){
+
+    body{
+        padding-top: 38px;
+    }
+
+#homeBgImage{
+    height:100vh;
+
+}
+
+#logo{
+    position:absolute;
+    width:10%;
+    top: 13px;
+    left: 14px;
+    z-index:99;
+}
+
+#cartIcon{
+    display:none;
+
+}
+#toggle{
+    display:none
+    }
+.navC{
+    color:rgb(255,255,255) ;
+    height: auto;
+    text-align: right;
+    border: none;
+    padding:10px 0px;
+    margin: 0px;
+/*    top: 0px;*/
+}
+.menuItems{
+    display:inline
+}
+.menuItems a{
+/*    padding: 15px 5vw 15px 0;*/
+    color:rgb(255, 255, 255);
+    text-align:center;
+        display:inline;
+}
+    .menuItems li{
+        display:inline;
+    }
+
+#headingC {
+     top: 70vh;
+    left: 4vw;
+}
+ #buttonC {
+    top: 75vh;
+    left: 4vw;
+    }
+     .fontexclusive {
+    top: 55vh;
+
+}
+    .productC{
+        width: 24.8%
+    }
+}
+
+
+
+    /* XLarge Screm*/
+    @media screen and (min-width:1280px){
+/*
+        #homeBgImage{
+            display:none;
+        }
+*/
+        #myVideo{
+            display:inline-block;
+            position:absolute;
+            background-size:cover;
+            top:0;
+            right:0;
+            width:100%;
+            height:auto;
+            background-attachment: fixed;
+            z-index:0;
+/*            background: linear(black,white)*/
+        }
+        .videoSetup{
+/*            background-color: rgba(0, 0, 0, 0.3);*/
+            background-image: linear-gradient(black,white);
+            overflow-y: hidden;
+            z-index:120;
+
+
+        }
+        #homeBgImage{
+            background-image:image();
+            }
+        #myVideo{
+        height: 100vh;
+        }
+        figure {
+    height: 83%;
+}
+}
+
+    /*
+.row{
+    display:inline
+}
+figure{
+ width:auto;
+}
+
+article{
+    display:inline;
+}
+    figcaption{
+    width:auto;
+    }
+*/
+
